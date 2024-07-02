@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:p="http://www.springframework.org/schema/p"
+xmlns:c="http://www.springframework.org/schema/c"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+<!-- way 1 -using property,value tag -->
+    <!-- <bean class="com.di_ways.setter_di.beans.Student" name="std1">
+        <property name="age">
+            <value>10</value>
+        </property>
+        <property name="name">
+            <value>Ayush</value>
+        </property>
+    </bean> -->
+
+<!-- way 2 -using sigle tag -->
+    <!-- <bean class="com.di_ways.setter_di.beans.Student" name="std1">
+        <property name="age" value="10" />
+        <property name="name" value="AyushKachhi" />
+    </bean> -->
+
+<!-- way3 -using p schema -->
+    <bean class="com.di_ways.setter_di.beans.Student" name="std1" p:age="10" p:name="AyushPatel" />
+
+</beans>
