@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:p="http://www.springframework.org/schema/p"
+xmlns:c="http://www.springframework.org/schema/c"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+ <!-- <bean class="com.bean_lifecycle_methods.using_xml.Student" name="std1" init-method="init" destroy-method="destroy" p:age="20" p:name="Ayush" /> -->
+ <bean class="com.bean_lifecycle_methods.using_xml.Student" name="std1" init-method="chalu" destroy-method="band" p:age="20" p:name="Ayush" />
+    
+</beans>
