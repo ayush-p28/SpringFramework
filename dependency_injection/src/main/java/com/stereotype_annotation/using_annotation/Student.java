@@ -2,16 +2,26 @@ package com.stereotype_annotation.using_annotation;
 
 import java.util.ArrayList;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 // @Component
+// @Component("obj")
 public class Student {
 
     @Value("Ayush")
     private String name;
     
-    @Value("#{getAddress}")
+    // @Value("#{getAddress}")
+    // private Address address;
+    
+    // @Autowired
+    // private Address address;
+    
+    @Autowired
+    @Qualifier("gett2")
     private Address address;
 
     @Value("#{getlist}")

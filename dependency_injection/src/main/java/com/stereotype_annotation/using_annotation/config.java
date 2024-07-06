@@ -15,8 +15,13 @@ public class config {
         return new Student();
     }
 
-    @Bean
+    @Bean(name="gett1")
     public Address getAddress(){
+        return new Address();
+    }
+
+    @Bean(name="gett2")
+    public Address getAd(){
         return new Address();
     }
 

@@ -6,7 +6,6 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.bean_lifecycle_methods.using_interfaces.Student;
 
-
 // import com.bean_lifecycle_methods.using_annotations.Student;
 
 // import com.bean_lifecycle_methods.using_xml.Student;
